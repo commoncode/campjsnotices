@@ -1,2 +1,6 @@
 /.meteor/
 .DS_Store
+.sass-cache
+inuit.css
+watch
+.scss
