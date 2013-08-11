@@ -5,8 +5,8 @@ Getting Started
 ---------------
 
     $ curl https://install.meteor.com | /bin/sh
-    $ git clone git@github.com:commoncode/notices.git
-    $ cd mello
+    $ git clone git@github.com:commoncode/campjsnotices.git
+    $ cd campjsnotices
     $ meteor
     Running on: http://localhost:3000/
 
