@@ -10,50 +10,46 @@ Getting Started
     $ meteor
     Running on: http://localhost:3000/
 
-Notices
--------
+See it
+------
 
-+ Add collection
-    - some sample fixtures
-+ Setup templates
-+ Setup helpers
+Currently hosted on Meteor's infrastructure:
 
-Accounts
---------
-
-    meteor add accounts-password
-    meteor add accounts-ui
-
-Add the code:
-
-    Accounts.ui.config({
-      passwordSignupFields: 'USERNAME_ONLY'
-    });
+    http://campjsnotices.meteor.com
 
 
-Add/remove notices
-------------------
+What's this for?
+----------------
 
-_Now that we have a user_
+Built by Daryl Antony in a few hours for CampJS II workshop, August 2013.
 
-+ Add Notices
-    - add form and event
-+ Take Down Notice
-    - add button for currentUserIsOwner
+Hit him up for coffee in Melbourne:
 
-Messages
---------
+Common Code (commoncode.com.au)
+114 Hoddle Street
+Abbotsford
 
-_Add the ability to chat on the notices_
+m: +61 423 972 657
+e: daryl@commoncode.com.au
 
-+ Add Messages
+Rationale
+---------
+
+It seems, that when attending conferences, a very useful means of keeping up to date with the Conference story is to check the conference hashtag on twitter.
+
+I thought that this might be augmented to make a place that could capture the story of the conference in a single, summarised and documented place.
+
+The first thing accomplished is a simple Notice Board with the ability to chat realtime about the Notices.
+
+When I get to an Internet enabled space – I'll incorporate more ideas that utilise the twitter streaming API; the notices will evolve to become a kind of living storyboard of the event.
+
+Thanks for checking this out.
 
 
 More to do?
-===========
+-----------
 
-+ Message UI
++ Better Message UI
 + Add Twitter accounts
     - Tweet out
-
-
++ Evolve the layout to become a Storyboard
