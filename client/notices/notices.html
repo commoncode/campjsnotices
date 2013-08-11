@@ -1,0 +1,33 @@
+
+<template name="noticeBoard">
+  {{> notices}}
+</template>
+
+<template name="notices">
+  <section id="notices">
+    {{#each notices}}
+      {{> notice}}
+    {{/each}}
+  </section>  
+</template>
+
+<template name="notice">
+  <div class="notice-div">
+    <article class="notice">
+      <header class="notice-header">
+        <h2>{{title}}</h2>
+        
+      </header>
+      <p>{{description}}</p>
+      <footer>
+        <small>Posted by: {{userName userId}}</small>
+
+        {{> messages}}
+
+        {{#if currentUserIsOwner}}
+          <button class="notice-remove">remove this notice</button>
+        {{/if}}
+      </footer>
+    </article>
+  </div>
+</template>

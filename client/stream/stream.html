@@ -1,0 +1,19 @@
+
+<template name="stream">
+  <section id="stream">
+    {{#each streams}}
+      {{> streamer}}
+    {{/each}}
+  </section>
+</template>
+
+<template name="streamer">
+  <div class="streamer-div">
+    <article>
+      <header>
+        <h3>{{title}}</h3>
+      </header>
+      <p>{{description}}</p>
+    </article>
+  </div>
+</template>

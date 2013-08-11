@@ -1,0 +1,109 @@
+
+@import "_grid";
+
+/*
+  Page
+*/
+.page-body {
+  @extend .eight-tenths;
+  padding: 4%;
+  float: left;
+
+  .page-body-header {
+    margin: 2%;
+  }
+}
+
+.page-aside {
+  @extend .grid;
+  @extend .two-tenths;
+
+  position: absolute;
+  top: 4%;
+  right: 4%;
+
+  .login-buttons-div {
+    margin: 4%;
+    padding: 4%;
+  }
+
+}
+
+/*
+  Notices
+*/
+
+#notices {
+  @extend .grid;
+  @extend .grid--full;
+  @extend .eight-tenths;
+}
+
+.notice-div {
+  @extend .grid__item;
+  @extend .palm--one-whole;
+  @extend .lap--one-half;
+  @extend .desk--one-third;
+
+  float: left;
+  .notice {
+    margin: 4%; 
+    padding: 4%; 
+  }
+}
+
+.notice-remove {
+  @extend .one-whole;
+  margin-top: 2%;
+}
+
+
+/*
+  Add new notice
+*/
+
+.add-notice-div {
+
+  @extend .grid__item;
+
+  .add-notice {
+    @extend .grid;
+
+    margin: 4%; 
+    padding: 4%;
+
+    input, textarea, button {
+      @extend .grid__item;
+      @extend .one-whole;
+    }
+    button {
+      margin-top: 2%;
+    }
+  }
+}
+
+/*
+  Messages
+*/
+
+.notice-messages {
+  @extend .grid;
+
+  .notice-messages-form {
+    @extend .grid__item;
+    @extend .one-whole;
+    @extend .grid;
+
+    .notice-messages-input, .notice-messages-button{
+      @extend .grid__item;
+      float: left;
+    }
+    .notice-messages-input {
+      @extend .eight-tenths;
+    }
+    .notice-messages-button {
+      @extend .two-tenths;
+      float: left;
+    }
+  }
+}

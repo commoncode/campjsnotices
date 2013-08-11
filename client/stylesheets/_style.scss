@@ -1,0 +1,29 @@
+
+
+body {
+  background: #d1dfbc url('/images/notices-header-bg.png') 0 0 no-repeat;
+  font-family: 'Titillium Web', Helvetica, sans-serif;
+  color: #555;
+  text-shadow: -1px -1px 0px rgba(221,221,221,0.3);
+}
+
+/*
+  Notices
+*/
+.notice, .add-notice {
+  border: 1px solid #ccc;
+  background: #efefef;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+
+/*
+  Messages
+*/
+.notice-messages {
+}
+
+.notice-messages-message:nth-child(odd) {
+  background-color: #fefefe;
+}

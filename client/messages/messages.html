@@ -1,0 +1,24 @@
+<template name="messages">
+
+  <div class="notice-messages-div">
+    <section class="notice-messages">
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+
+      {{#if currentUser}}
+        <form class="notice-messages-form">
+          <input class="notice-messages-input" name="text" type="text">
+          <button class="notice-messages-button">&crarr;</button>
+        </form>
+      {{/if}}
+    </section>
+  </div>
+
+</template>
+
+<template name="message">
+  <article class="notice-messages-message">
+    {{text}} <small>by {{userName userId}}</small>
+  </article>
+</template>
